@@ -62,5 +62,11 @@ class PlayList:
         self.songs.remove(song)
         self.songs.insert(new_position, song)
         return True
+
+    def total_duration(self):
+        total = 0
+        for song in self.songs:
+            total += song.duration
+        return total
             
             

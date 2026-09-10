@@ -14,6 +14,4 @@ class Song:
             return self.title == other.title and self.artist == other.artist and self.duration == other.duration
         return False
 
-    def __hash__(self):
-        return hash((self.title, self.artist, self.duration))
     
